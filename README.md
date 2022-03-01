@@ -1,6 +1,9 @@
 # Worth Your Time
 Is working for your current pay really worth your time? This app will hlep you realize if the job you are doing, truly is worth your time. Specify your hourly or monthly pay and watch real time how much money you earn. 
 
+
+![Visual representation](./visual.png)
+
 ### Installation
 1. 
 ```bash
