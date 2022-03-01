@@ -3,6 +3,9 @@ Is working for your current pay really worth your time? This app will help you r
 
 <img src="./visual.png" width="300">
 
+
+![Visual representation](./visual.png)
+
 ### Installation
 1. Clone the repository and run
 ```bash
