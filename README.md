@@ -1,11 +1,10 @@
 # Worth Your Time
-Is working for your current pay really worth your time? This app will hlep you realize if the job you are doing, truly is worth your time. Specify your hourly or monthly pay and watch real time how much money you earn. 
+Is working for your current pay really worth your time? This app will help you realize if the job you are doing, truly is worth your time. Specify your hourly or monthly pay and watch real time how much money you earn. 
 
-
-![Visual representation](./visual.png)
+<img src="./visual.png" width="300">
 
 ### Installation
-1. 
+1. Clone the repository and run
 ```bash
 git clone <this repo>
 ```

@@ -12,6 +12,7 @@ struct SelectionScreen: View {
     var backgroundColor = Color("myGreen")
     @State var hourlyPay : Int = 100
     
+    
     @State var audioPlayer: AVAudioPlayer!
     
     @State var isCountingActive = false
@@ -25,6 +26,7 @@ struct SelectionScreen: View {
             ZStack {
                 backgroundColor
                     .ignoresSafeArea()
+                    .zIndex(0)
 
                 VStack {
                     Text("Worth Your time?")
@@ -33,6 +35,7 @@ struct SelectionScreen: View {
                         .bold()
                         .font(.system(size: 60))
                         .foregroundColor(.black)
+                  
                     Spacer()
                     VStack(spacing: 10) {
                         Spacer()
@@ -98,9 +101,29 @@ struct SelectionScreen: View {
                 let sound = Bundle.main.path(forResource: "click", ofType: "mp3")
                 self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
             })
-
-
-        }
+            .toolbar {
+               ToolbarItem(placement: .navigationBarLeading) {
+                 Button(action: {
+                   print("Refresh")
+                 }) {
+                   Label("Send", systemImage: "gearshape.fill")
+                     .padding()
+                     .foregroundColor(Color("gold"))
+                     .font(.system(size: 25))
+                 }
+               }
+               ToolbarItem(placement: .navigationBarTrailing) {
+                 Button(action: {
+                   print("Refresh")
+                 }) {
+                   Label("Refresh", systemImage: "dollarsign.circle")
+                     .padding()
+                     .foregroundColor(Color("gold"))
+                     .font(.system(size: 25))
+                 }
+               }
+             }
+      }
     }
 }
 

@@ -13,6 +13,8 @@
 		1C52DCEF27C1A47500238727 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52DCEE27C1A47500238727 /* ContentView.swift */; };
 		1C52DCF127C1A47600238727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C52DCF027C1A47600238727 /* Assets.xcassets */; };
 		1C52DCF427C1A47600238727 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C52DCF327C1A47600238727 /* Preview Assets.xcassets */; };
+		1C7AD2BA27D18895009B6541 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AD2B927D18895009B6541 /* SettingsView.swift */; };
+		1C7AD2BE27D188B4009B6541 /* MoneyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AD2BD27D188B4009B6541 /* MoneyListView.swift */; };
 		1CFA99E627CADDC400375A1F /* worth_your_time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEFF8FF27CAD9B50048A234 /* worth_your_time.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,13 +33,15 @@
 
 /* Begin PBXFileReference section */
 		1C139BC327CA2D3C00928324 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		1C1B006327C6F753007F7D8A /* SelectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionScreen.swift; sourceTree = "<group>"; };
+		1C1B006327C6F753007F7D8A /* SelectionScreen.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SelectionScreen.swift; sourceTree = "<group>"; tabWidth = 2; wrapsLines = 1; };
 		1C1B006827C6F7CC007F7D8A /* CounterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterScreen.swift; sourceTree = "<group>"; };
 		1C23427E27CA685D000D568A /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
 		1C52DCE927C1A47500238727 /* Worth your time?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Worth your time?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C52DCEE27C1A47500238727 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1C52DCF027C1A47600238727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C52DCF327C1A47600238727 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C7AD2B927D18895009B6541 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1C7AD2BD27D188B4009B6541 /* MoneyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyListView.swift; sourceTree = "<group>"; };
 		1C9931F327C9A49300CCB11A /* Worth-your-time--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Worth-your-time--Info.plist"; sourceTree = SOURCE_ROOT; };
 		1CEFF8FF27CAD9B50048A234 /* worth_your_time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = worth_your_time.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +64,8 @@
 				1C52DCEE27C1A47500238727 /* ContentView.swift */,
 				1C1B006327C6F753007F7D8A /* SelectionScreen.swift */,
 				1C1B006827C6F7CC007F7D8A /* CounterScreen.swift */,
+				1C7AD2B927D18895009B6541 /* SettingsView.swift */,
+				1C7AD2BD27D188B4009B6541 /* MoneyListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,8 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7AD2BA27D18895009B6541 /* SettingsView.swift in Sources */,
 				1CFA99E627CADDC400375A1F /* worth_your_time.swift in Sources */,
 				1C52DCEF27C1A47500238727 /* ContentView.swift in Sources */,
+				1C7AD2BE27D188B4009B6541 /* MoneyListView.swift in Sources */,
 				1C1B006927C6F7CC007F7D8A /* CounterScreen.swift in Sources */,
 				1C1B006427C6F753007F7D8A /* SelectionScreen.swift in Sources */,
 			);
@@ -324,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Phil.Worth-your-tim";
+				PRODUCT_BUNDLE_IDENTIFIER = "Phil.Worth-your-time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -357,7 +365,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Phil.Worth-your-tim";
+				PRODUCT_BUNDLE_IDENTIFIER = "Phil.Worth-your-time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

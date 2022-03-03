@@ -132,11 +132,11 @@ struct CounterScreen: View {
                 
                     }
                     .alert("this is important", isPresented: $StopTimerAlert) {
+                        Button("No") {}
                         Button("Yes") {
                             isActive = false
                             self.presentationMode.wrappedValue.dismiss()
                         }
-                        Button("No") {}
                     } message: {
                         Text("Are you sure you want to stop the timer now?")
                     }
