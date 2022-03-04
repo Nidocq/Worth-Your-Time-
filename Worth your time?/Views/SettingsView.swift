@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct SettingsView: View {
+  @State var ddd = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      Form {
+        Section {
+          HStack {
+            Image(systemName: "pencil.tip")
+            Text("tips")
+              .bold()
+          }
+          
+          HStack {
+            Toggle("Enable something", isOn: $ddd)
+            
+            
+          }
+          
+          
+        }
+        
+        Section {
+          Text("I don't know")
+          if ddd {
+            Text("Hellooooo")
+          }
+        }
+      }
     }
 }
 
