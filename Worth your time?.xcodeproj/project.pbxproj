@@ -33,7 +33,7 @@
 
 /* Begin PBXFileReference section */
 		1C139BC327CA2D3C00928324 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		1C1B006327C6F753007F7D8A /* SelectionScreen.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SelectionScreen.swift; sourceTree = "<group>"; tabWidth = 2; wrapsLines = 1; };
+		1C1B006327C6F753007F7D8A /* SelectionScreen.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SelectionScreen.swift; sourceTree = "<group>"; tabWidth = 4; wrapsLines = 1; };
 		1C1B006827C6F7CC007F7D8A /* CounterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterScreen.swift; sourceTree = "<group>"; };
 		1C23427E27CA685D000D568A /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
 		1C52DCE927C1A47500238727 /* Worth your time?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Worth your time?.app"; sourceTree = BUILT_PRODUCTS_DIR; };

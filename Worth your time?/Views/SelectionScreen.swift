@@ -12,7 +12,6 @@ struct SelectionScreen: View {
     var backgroundColor = Color("myGreen")
     @State var hourlyPay : Int = 100
     
-    
     @State var audioPlayer: AVAudioPlayer!
     
     @State var isCountingActive = false
@@ -20,7 +19,8 @@ struct SelectionScreen: View {
     @State var jobTypes = ["Part time", "Full time"]
     @State var jobTypesSelection = "Part time"
     
-    
+  // Store local data
+  // https://stackoverflow.com/questions/28628225/how-to-save-local-data-in-a-swift-app
     var body: some View {
         NavigationView {
             ZStack {
@@ -54,7 +54,7 @@ struct SelectionScreen: View {
                         .background(Color("gold"))
                         .cornerRadius(10)
                         
-                        Picker("hourly pay", selection: $hourlyPay) {
+                      Picker("hourly pay", selection: $hourlyPay) {
                             Text("Hourly wage selector")
                             ForEach(1..<1000, id: \.self) { hour in
                                 ZStack {
@@ -103,9 +103,7 @@ struct SelectionScreen: View {
             })
             .toolbar {
                ToolbarItem(placement: .navigationBarLeading) {
-                 Button(action: {
-                   print("Refresh")
-                 }) {
+                 NavigationLink(destination: SettingsView()) {
                    Label("Send", systemImage: "gearshape.fill")
                      .padding()
                      .foregroundColor(Color("gold"))
@@ -113,10 +111,8 @@ struct SelectionScreen: View {
                  }
                }
                ToolbarItem(placement: .navigationBarTrailing) {
-                 Button(action: {
-                   print("Refresh")
-                 }) {
-                   Label("Refresh", systemImage: "dollarsign.circle")
+                 NavigationLink(destination: MoneyListView()) {
+                   Label("Refresh", systemImage: "dollarsign.circle.fill")
                      .padding()
                      .foregroundColor(Color("gold"))
                      .font(.system(size: 25))
