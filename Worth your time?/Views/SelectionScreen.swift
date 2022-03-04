@@ -107,15 +107,15 @@ struct SelectionScreen: View {
                    Label("Send", systemImage: "gearshape.fill")
                      .padding()
                      .foregroundColor(Color("gold"))
-                     .font(.system(size: 25))
+                     .font(.system(size: 22))
                  }
                }
                ToolbarItem(placement: .navigationBarTrailing) {
-                 NavigationLink(destination: MoneyListView()) {
+                 NavigationLink(destination: MoneyListView(inputString: "")) {
                    Label("Refresh", systemImage: "dollarsign.circle.fill")
                      .padding()
                      .foregroundColor(Color("gold"))
-                     .font(.system(size: 25))
+                     .font(.system(size: 22))
                  }
                }
              }
